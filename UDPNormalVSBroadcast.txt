@@ -1,0 +1,13 @@
+Normal UDP Communication:
+        - In normal UDP communication, the client sends UDP packets directly to the specific IP address and port 		    number of the server.
+        - The server's IP address and port number must be known to the client in advance for successful 		  	    communication.
+        - The client and server engage in a point-to-point communication, where the packets are sent from the client 	    to the server and vice versa.
+        - This mode is suitable when the client knows the exact IP address and port number of the server and wants 	    to establish a direct communication channel.
+
+
+Broadcast UDP Communication:
+        - In broadcast UDP communication, the client sends UDP packets to a special IP address known as the 		    broadcast address.
+        - The broadcast address represents all devices on a specific network segment.
+        - The server listens for incoming UDP packets on the broadcast address and receives the packets from any 		    client that broadcasts to that address.
+        - This mode allows for a one-to-many communication, where the server receives packets from multiple clients 	    simultaneously.
+        - This mode is suitable when the client does not know the exact IP address and port number of the server or 	    when there are multiple servers on the network that can respond to the client.
